@@ -1,0 +1,5 @@
+Pillow==11.2.1
+Requests==2.32.3
+UnityPy==1.21.0
+tqdm==4.66.5
+PyQt6==6.8.1
