@@ -21,7 +21,6 @@ The modding tools will be located in the folder _DORO_Tools_, from there you can
 ## Modding tools usage:
 
 Most of the tools have got a batch file _X_MAINBATFILE.bat_, double-click on it to launch the tool window and then you can start to use the tool from there.
-If there is no _X_MAINBATFILE.bat_ like in the case of the Effects Remover tool you can double-click the script _DOROEffectsRemover.py_ instead.
 
 
 ## For updates:
