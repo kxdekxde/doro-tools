@@ -1,6 +1,6 @@
 # DORO Tools
 
-All of my tools to mod [NIKKE](https://nikke-en.com/) bundles. Thanks to Bingle and Danieru for the help.
+All of my tools to mod [NIKKE](https://nikke-en.com/) bundles. Thanks to Bingle, Danieru and Na0h for the help.
 
 
 
