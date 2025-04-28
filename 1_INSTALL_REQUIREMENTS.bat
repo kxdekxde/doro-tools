@@ -27,11 +27,11 @@ if %errorlevel% neq 0 (
     echo Python 3.13 is already installed.
 )
 
-REM Run MEGAcmd_install.py from installation_scripts folder
-echo Running MEGAcmd_install.py...
-python installation_scripts\MEGAcmd_install.py
+REM Run install_requirements.py from installation_scripts folder
+echo Running install_requirements.py...
+python installation_scripts\install_requirements.py
 if %errorlevel% neq 0 (
-    echo An error occurred while running MEGAcmd_install.py.
+    echo An error occurred while running install_requirements.py.
     exit /b
 )
 
@@ -43,11 +43,11 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-REM Run install_requirements.py from installation_scripts folder
-echo Running install_requirements.py...
-python installation_scripts\install_requirements.py
+REM Run MEGAcmd_install.py from installation_scripts folder
+echo Running MEGAcmd_install.py...
+python installation_scripts\MEGAcmd_install.py
 if %errorlevel% neq 0 (
-    echo An error occurred while running install_requirements.py.
+    echo An error occurred while running MEGAcmd_install.py.
     exit /b
 )
 
