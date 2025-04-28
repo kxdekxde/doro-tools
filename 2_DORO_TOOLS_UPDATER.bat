@@ -6,6 +6,10 @@ cls
 echo WARNING: This will completely replace your DORO_Tools folder with fresh files.
 echo Any existing files will be permanently deleted, so make sure you don't have important files in your "Repacked" folders.
 echo.
+echo IMPORTANT: 
+echo If the downloads fail or you get the MEGA servers error you need to close this window and double-click this file again,
+echo eventually the downloads will start properly.
+echo.
 set /p "update_confirmation=Do you wish to update the tools now? Yes/No [y/n]: "
 
 :: Check user response
