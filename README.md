@@ -25,7 +25,7 @@ Most of the tools have got a batch file _X_MAINBATFILE.bat_, double-click on it 
 
 ## For updates:
 
-you can double-click on `2_DORO_TOOLS_UPDATER.bat` for updates as well to download them when there are updates available, but read the warning message carefully because the update will clean all of the modding tools folders for a fresh download.
+You can double-click on `2_DORO_TOOLS_UPDATER.bat` for updates as well to download them when there are updates available, but read the warning message carefully because the update will clean all of the modding tools folders for a fresh download.
 
 
 Happy modding! ^‿^
