@@ -44,20 +44,21 @@ ping -n 1 mega.nz >nul 2>&1 || (
     exit /b
 )
 
-:: Execute the Python downloader script with retry logic
-set "max_retries=10"
+:: Execute the Python downloader script with retry on connection failure
+set "max_retries=3"
 set "retry_count=0"
 
 :download_retry
 echo Starting download process (Attempt !retry_count!/!max_retries!)...
 python megadownloader.py
+set "exit_code=%errorlevel%"
 
-if errorlevel 1 (
-    set /a retry_count+=1
+if %exit_code%==2 (
     echo.
-    echo ERROR: Download failed (Error Code: %errorlevel%)
-    
-    if !retry_count! lss !max_retries! (
+    echo ERROR: Connection to MEGA failed (Error Code: %exit_code%).
+    set /a retry_count+=1
+
+    if !retry_count! lss %max_retries% (
         echo Retrying in 5 seconds...
         timeout /t 5 /nobreak >nul
         goto download_retry
@@ -66,8 +67,12 @@ if errorlevel 1 (
         pause
         exit /b
     )
+) else (
+    echo.
+    echo Download completed (Exit Code: %exit_code%)
 )
 
 echo.
 echo SUCCESS: Update completed successfully.
 pause
+exit /b
