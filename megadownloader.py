@@ -18,15 +18,7 @@ def run_megacmd_command():
     
     # List of Mega folder URLs (including the original one and new ones)
     mega_urls = [
-        "https://mega.nz/folder/EG1kDRYL#qoj4PIfzukfK-OXd0J_HpA",  # Original link
-        "https://mega.nz/folder/ZCckyBja#GNr0XzRR1wmVoEbBZiq5IA",  # New link 1
-        "https://mega.nz/folder/kfdFwCpb#XhvGFo75mX_SeLAAn4TuzQ",  # New link 2
-        "https://mega.nz/folder/pfNCyZyQ#gLefHjXOQ_kxSMiGGL6Qng",  # New link 3
-        "https://mega.nz/folder/wDUXiDDQ#PpvESE30Y5q8ecmo9ywhEg",  # New link 4
-        "https://mega.nz/folder/RLN1kBKQ#O9nB6gtpYycQYuPuBvTHWQ",  # New link 5
-        "https://mega.nz/folder/pHV3ALaJ#nx-XPxPvkXFn2gQsqZ3XgA",  # New link 6
-        "https://mega.nz/folder/IOUX2K7K#tJjVroQD3pdA8vT6MoBRhg",  # New link 7
-        "https://mega.nz/folder/IT0xySZJ#eYi5p8-1SPUUSwumfp1Cew"   # New link 8
+        "https://mega.nz/folder/ELEmEDyK#U0iobhXNez5nuWALOrYdzg"  # Doro_Tools folder
     ]
     
     # Get script directory and create DORO_Tools path
