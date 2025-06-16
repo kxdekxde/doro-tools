@@ -7,11 +7,11 @@ if %errorlevel% neq 0 (
 
     REM Download Python 3.13 installer
     echo Downloading Python 3.13 installer...
-    powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.13.3/python-3.13.3-amd64.exe -OutFile python-3.13.3-amd64.exe"
+    powershell -Command "Invoke-WebRequest -Uri https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe -OutFile python-3.13.2-amd64.exe"
 
     REM Run the Python installer silently
     echo Installing Python 3.13...
-    python-3.13.3-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
+    python-3.13.2-amd64.exe /quiet InstallAllUsers=1 PrependPath=1
 
     REM Check if installation was successful
     python --version 2>nul | findstr /i "3.13" >nul
@@ -21,7 +21,7 @@ if %errorlevel% neq 0 (
     )
 
     REM Delete the installer after installation
-    del python-3.13.3-amd64.exe
+    del python-3.13.2-amd64.exe
     echo Python 3.13 installation completed successfully.
 ) else (
     echo Python 3.13 is already installed.
