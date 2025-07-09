@@ -17,6 +17,8 @@ All of my tools to mod [NIKKE](https://nikke-en.com/) bundles. Thanks to Bingle,
 Double-click on `2_DORO_TOOLS_UPDATER.bat` and wait for it to finish to download the modding tools. If the download fails close the terminal window and retry.
 The modding tools will be located in the folder _DORO_Tools_, from there you can use them as before when they were packed executable files.
 
+### IMPORTANT: If you have issues when running doro tools updater then go to [this link](https://mega.nz/folder/ELEmEDyK#U0iobhXNez5nuWALOrYdzg) and download the tools manually as zip files.
+
 
 ## Modding tools usage:
 
